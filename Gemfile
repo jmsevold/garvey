@@ -6,7 +6,11 @@ gem 'foundation-rails'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+group :development do
+	gem 'sqlite3', '1.3.8'
+	# gem install sqlite3 -v '1.3.8'
+end
+
 
 group :production do
   gem 'pg', '0.12.2'
